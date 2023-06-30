@@ -1,0 +1,130 @@
+body{
+  background-color: rgb(0, 0, 0);
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-container >  .main-item > div > img {
+  width: 450px;
+  height: 500px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  image-rendering: optimizeQuality;
+  image-resolution: 300dpi;
+  opacity: 0.9;
+}
+.main-item > div > img:hover{
+   opacity: 0.7;
+}
+.main-item{position: relative}
+.prev-btn{
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 2px 5px rgb(255, 255, 255);
+  background-color: rgb(252, 174, 242);
+  transition: all 0.5s ease-in-out;
+  color: rgb(0, 0, 0);
+}
+.prev-btn:hover{
+  box-shadow: 0px 0px 0px white;
+}
+.next-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 2px 5px rgb(255, 255, 255);
+  background-color: rgb(252, 174, 242);
+  transition: all 0.5s ease-in-out;
+  color: rgb(0, 0, 0);
+}
+.next-btn:hover{
+  box-shadow: 0px 0px 0px white;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+  font-family: Bungee;
+  opacity: 0.5;
+} 
+p{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 10px;
+  font-size: 15px;
+  z-index: 1;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  letter-spacing: 2px;
+  background-color: rgb(165, 4, 119);
+  padding: 10px;
+  border-radius: 25px;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: center;  
+  margin-top: 5rem;
+}
+footer > div > small {
+  color:white;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  letter-spacing: 1px;
+}
+@media (max-width:700px) {
+  .main-container >  .main-item > div > img {
+    width: 300px;
+    height: 550px;
+  }
+  .prev-btn{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 11px;
+  }
+  .next-btn{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 11px;
+  }
+  h1{
+    font-size: 25px;
+  }
+}
+@media (max-width:500px) {
+  .main-container >  .main-item > div > img {
+    width: 300px;
+    height: 580px;
+  }
+  .prev-btn{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 11px;
+  }
+  .next-btn{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 11px;
+  }
+  h1{
+    font-size: 25px;
+    top: 90px;
+    color: rgb(0, 0, 0);
+  }
+}
