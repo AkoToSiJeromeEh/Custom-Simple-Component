@@ -1,0 +1,108 @@
+.Modal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.402);
+    
+}
+.Open{
+    visibility: visible;
+    z-index: 10;
+    animation: 1s transitions ease-in-out;
+}
+@keyframes transitions{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.bg-cont{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(255, 184, 184, 0.956);
+    height: 30vh;
+    width: 550px;
+    border-radius: 3px;
+}
+.button-cont{
+    align-self: flex-end;
+}
+.button-cont > button {
+    margin-right : 10px;
+    margin-top : 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(255, 204, 204);
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.content-content > h2 {
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.modal-btn{
+   position: fixed;
+   left: 0;
+   right: 0;
+   text-align: center;
+   top: 50%;
+}
+.modal-btn > button{
+    width: 300px;
+    height: 40px;
+    font-family: Montserrat;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 5px rgb(6, 6, 6);
+    background-color: rgb(255, 194, 194);
+    transition: all 0.5s ease-in-out;
+}
+.modal-btn > button:active{
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+@media (max-width:800px) {
+    
+    .bg-cont{
+        max-width: 400px;
+        height: 25vh;
+    }
+    .content-content > h2{
+        font-size: 15px;
+    }
+}
+@media (max-width:400px) {
+    
+    .bg-cont{
+        max-width: 350px;
+        height: 25vh;
+    }
+
+    .content-content > h2{
+        font-size: 14px;
+    }
+}

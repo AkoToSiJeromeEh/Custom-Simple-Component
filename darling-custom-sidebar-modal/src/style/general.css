@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 90vh;
+}
+h2,h3,h4,small,ul,p{
+    margin: 0;
+    padding: 0;
+}

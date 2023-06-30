@@ -1,0 +1,20 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+footer > div {
+    margin-top: 30rem;
+}
+footer > div > small {
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+@media (max-width:400px) {
+    footer > div {
+        margin-top: 40rem;
+    }
+}
