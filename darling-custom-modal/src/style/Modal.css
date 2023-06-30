@@ -1,0 +1,162 @@
+body{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(4, 4, 4);
+}
+h1,p{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.main-item-1 > p {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Montserrat;
+    line-height: 30px;
+    word-spacing:3px;
+    font-weight: 400;
+}
+.main-item-1 > div > button{
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+   background-color: transparent;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: rgb(5, 4, 4);
+    background-color: rgba(255, 160, 244, 0.704);
+    transition: all 0.5s ease-in-out;
+}
+.main-item-1 > div > button:hover{
+    background-color: transparent;
+    color: rgba(255, 160, 244, 0.704);
+}
+.main-item-1 > div > h1 {
+    font-family: Montserrat;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: rgb(255, 170, 218);
+}
+hr{
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.814);
+}
+.main-item-1{
+    position: fixed;
+    left: 0;
+    right: 0;
+    max-width: 550px;
+    margin: auto;
+    z-index: 100;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    transform: translate(0%);
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    display: none;
+    animation: 1.5s animationTOtop ease forwards;
+    overflow: auto;
+    max-height: 450px; /* Set a maximum height for the scrollable area */
+}
+.p-2{
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+@keyframes animationTOtop {
+
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    
+}
+.main-item-2{
+    align-self: center;
+    cursor: pointer;
+    margin-top: 20rem;
+}
+.main-item-2 > button{
+
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: rgb(150, 26, 148);
+    box-shadow: 0px 2px 5px rgb(255, 154, 248);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+.show{
+    display: block;
+}
+.main-item-2 > button:hover{
+    background-color: rgb(241, 25, 238);
+    color: rgb(0, 0, 0);
+}
+@media(max-width : 800px){
+    .main-item-1{
+        max-width: 400px;
+        text-align: center;
+    }
+    .main-item-1 > div > h1 {
+        font-size: 25px;
+    }
+    .main-item-1 > div > button{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        
+    }
+    .main-item-1 > p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media(max-width : 500px){
+    .main-item-1{
+        max-width: 300px;
+
+    }
+
+}
+  
+  .main-item-1::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+  }
+  
+  .main-item-1::-webkit-scrollbar-track {
+    background:transparent; /* Background color of the scrollbar track */
+  }
+  
+  .main-item-1::-webkit-scrollbar-thumb {
+    background:transparent;
+  }
+  
+
+  
