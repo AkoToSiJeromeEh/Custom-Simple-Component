@@ -1,0 +1,11 @@
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+.footer-item > small {
+    font-family: Montserrat;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
