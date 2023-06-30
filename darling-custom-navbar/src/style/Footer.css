@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+}
+footer > div {
+    align-self: end;
+    padding-bottom: 5px;
+}
+div > small {
+    font-family: Bungee;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+@media (max-width:700px) {
+    div > small{
+        font-size: 13px;
+    }
+}
